@@ -6,26 +6,22 @@
     position: relative;
     min-height: 60px;
 
-    @media screen and(max-width:480px) {
+    @media screen and(max-width:767px) {
         display: none;
     }
 }
 
 .nav {
     align-items: center;
-    position: absolute;
-
-    @media screen and(min-width:481px) and(max-width:768px){
-        display: flex;
-        position: relative;
-    }
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .logo{
     @extend %logo;
     color: #000;
-    // margin-right: 93px;
+    margin-right: 93px;
     border: none;
 
 }
@@ -51,6 +47,10 @@ span {
 
 .mobile__nav{
     display: flex;
+
+    @media screen and(min-width:768px){
+        display: none;
+    }
 }
 
 .mobile__container{}
@@ -109,8 +109,8 @@ span {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    @media screen and (min-width:481px) {
-        display:flex;
+    @media screen and (min-width:768px) {
+        display: flex;
     }
 }
 
@@ -179,9 +179,11 @@ span {
 
 .auto{
     @extend %list;
-    // display: flex;
-    // margin-left: auto;
     align-content: center;
+
+    @media screen and(min-width:1200px){
+        display: flex;
+    }
 }
 
 .auto__link{
@@ -193,7 +195,6 @@ span {
     text-decoration: none;
     color: var(--title-text-color);
 
-    // display: inline-flex;
     fill: var(--title-text-color);
 
     transition: color var(--animation);
