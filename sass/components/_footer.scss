@@ -164,6 +164,11 @@
     color: #FFFFFF;
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+        margin-left: 105px;
+    }
 }
 
 .send__label{

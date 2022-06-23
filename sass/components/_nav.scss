@@ -31,10 +31,6 @@ span {
 }
 
 .mobile{
-    display: none;
-
-    .mobile__button.is-open & {
-        
         position: fixed;
         left: 0;
         top: 0;
@@ -42,18 +38,44 @@ span {
         width: 100vw;
         height: 100vh;
         padding: 48px 40px;
-    }
+
+        opacity: 0;
+        pointer-events: none;
+
+        &.is-open{
+            opacity: 1;
+            pointer-events: visible;
+            z-index: 1;
+        }
 }
 
 .mobile__nav{
     display: flex;
+    padding: 10px 15px;
 
     @media screen and(min-width:768px){
         display: none;
     }
 }
 
-.mobile__container{}
+.mobile__logo{
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--praimeri-text-color);
+    text-decoration: none;
+}
+
+.mobile__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+}
 
 
 .mobile__button{
@@ -65,9 +87,18 @@ span {
 
 }
 
-// .mobile__menu{
-   
-// }
+.mobile__menu{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  
+    .mobile__button & {
+        
+        display: block;
+        z-index: 1;
+    }
+
+}
 
 .mobile__icon--cross{
     display: none;
@@ -85,23 +116,88 @@ span {
 }
 
 .mobile__list{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 
 }
 
-.mobili__item{
+.mobile__item{
+    margin-bottom: 32px;
 
+    &:last-child{
+        
+    }
+}
+
+.mobile__link{
+    text-decoration: none;
+    color: var(--praimeri-text-color);
+
+    &--current{
+        color: var(--accent-color)
+    }
 }
 
 .phone{
+    @extend %list;
 
 }
 
 .phone__item{
 
+    &--first{
+        margin-bottom: 32px;
+    }
+
 }
 
 .phone__link{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #757575;
+    text-decoration: none;
 
+    &--current{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
+
+}
+
+.mobile__flex{
+    display: flex;
+    margin-top: 32px;
+}
+
+.mobile__network{
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    &:first-child{
+        border: none;
+    }
+}
+
+.mobile__icon{
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 .nav__list{
@@ -204,6 +300,10 @@ span {
         color: var(--accent-color);
         fill: var(--accent-color);
     }
+
+    @media screen and(min-width:1200px) {
+        font-size: 14px;
+    }
 }
 
 .auto__envelope {
@@ -218,6 +318,11 @@ span {
         fill: var(--accent-color);
         cursor: pointer;
     }
+
+    @media screen and(min-width:1200px) {
+         width: 16px;
+         height: 12px;
+    }
 }
 
 .auto__smartphone {
@@ -230,6 +335,11 @@ span {
     &:focus {
         fill: var(--accent-color);
         cursor: pointer;
+    }
+
+    @media screen and(min-width:1200px) {
+        width: 10px;
+        height: 16px;
     }
 }
 

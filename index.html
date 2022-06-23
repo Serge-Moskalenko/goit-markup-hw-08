@@ -41,31 +41,54 @@
             </ul>
         </div>
         <div class="mobile__nav">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <button type="button" class="mobile__button" aria-expanded="false" data-menu-button>
-            <svg class="mobile__menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <a href="./index.html" class="mobile__logo"><span>Web</span>Studio</a>
+        <button type="button" class="mobile__button" aria-expanded="false" data-open>
+            <svg  width="40"  height="40" aria-label="Переключатель мобильного меню">
                 <use class="mobile__icon--menu" href="./images/icons.svg#icon-menu"></use>
-                <use class="mobile__icon--cross" href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
         </div>
-        <div class="mobile">
+        <div class="mobile " data-menu>
+            <button type="button" class="mobile__button is-open" aria-expanded="false" data-close>
+                <svg class="mobile__menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="mobile__icon--cross" href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            
             <div class="mobile__container">
             <ul class="mobile__list">
-                <li class="mobili__item"><a href="./index.html" class=" mobili__link mobili__link--current">Студия</a></li>
-                <li class="mobile__item"><a href="./portfolio.html" class="mobili__link">Портфолио</a></li>
-                <li class="mobile__item"><a href="" class="mobili__link">Контакты</a></li>
+                <li class="mobile__item"><a href="./index.html" class=" mobile__link mobile__link--current">Студия</a></li>
+                <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфолио</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
             </ul>
             <ul class="phone">
+                <li class="phone__item phone__item--first">
+                    <a class="phone__link phone__link--current" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
                 <li class="phone__item">
                     <a class="phone__link" href="mailto:info@devstudio.com">
                     info@devstudio.com</a>
                 </li>
-                <li class="phone__item">
-                    <a class="phone__link" href="tel:+380961111111" >
-                        +38 096 111 11 11</a>
-                </li>
             </ul>
+            <div class="mobile__flex">
+            
+                <div class="mobile__network">
+                    <a class="mobile__icon" network__mobilehref="https://www.instagram.com/">Instagram</a>
+                </div>
+            
+                <div class="mobile__network">
+                    <a class="mobile__icon" href="https://twitter.com/">Twitter</a>
+                </div>
+            
+                <div class="mobile__network">
+                    <a class="mobile__icon" href="https://www.facebook.com/">Facebook</a>
+                </div>
+            
+                <div class="mobile__network">
+                    <a class="mobile__icon" href="https://www.linkedin.com/">Linkedin</a>
+                </div>
+            </div>
             </div>
         </div>
     </header>
@@ -192,7 +215,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
          <section class="team">
             <div class="team__box">
                 <h2 class="team__title">Наша команда</h2>
