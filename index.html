@@ -22,7 +22,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class=" nav__link nav__link--current">Студия</a></li>
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="auto">
@@ -59,7 +59,7 @@
             <ul class="mobile__list">
                 <li class="mobile__item"><a href="./index.html" class=" mobile__link mobile__link--current">Студия</a></li>
                 <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфолио</a></li>
-                <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+                <li class="mobile__item"><a href="./index.html" class="mobile__link">Контакты</a></li>
             </ul>
             <ul class="phone">
                 <li class="phone__item phone__item--first">
@@ -74,7 +74,7 @@
             <div class="mobile__flex">
             
                 <div class="mobile__network">
-                    <a class="mobile__icon" network__mobilehref="https://www.instagram.com/">Instagram</a>
+                    <a class="mobile__icon" href="https://www.instagram.com/">Instagram</a>
                 </div>
             
                 <div class="mobile__network">
@@ -94,6 +94,15 @@
     </header>
     <main>
         <section class="hero">
+            <picture>
+                
+                <source srcset="./images/head/мобила.jpg 1x, ./images/head/мобила2.jpg 2x, ./images/head/мобила3.jpg 3x " media="(max-width:576px)" />
+
+                <source srcset="./images/head/таблетка.jpg 1x, ./images/head/таблетка2.jpg 2x, ./images/head/таблетка3.jpg 3x" media="(min-width:768px)" />
+
+                <source srcset="./images/head/comp.jpg 1x, ./images/head/comp2.jpg 2x, ./images/head/comp3.jpg 3x" media="(min-width:1200px)" />
+
+            </picture>
             <div class="hero__description">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open class="hero__buttons" type="button">Заказать услугу</button>
@@ -138,7 +147,7 @@
                                     <use href="./images/icons.svg#icon-icon-check"></use>
                                 </svg>
                                 <span class="checkbox__empty"></span>
-                                <label for=""><span class="checkbox__text">Соглашаюсь с рассылкой и принимаю</span> <a><span class="checkbox__contract">Условия договора</span></a></label>
+                                <label for=""><span class="checkbox__text">Соглашаюсь с рассылкой и принимаю</span> <a href="./index.html"><span class="checkbox__contract">Условия договора</span></a></label>
                             </div>
                             <button class="submit" type="submit">Отправить</button>
                     </form>
@@ -196,19 +205,19 @@
                 <h2 class="about__title">Чем мы занимаемся</h2>
                 <ul class="image__list">
                     <li class="image__item">
-                        <img src="./images/head/компютер.jpg" alt="компютер" width="370">
+                        <img srcset="./images/head/компютер.jpg 1x, ./images/head/компютер@2x.jpg  2x, ./images/head/компютер@3x.jpg 3x " src="./images/head/компютер.jpg" alt="компютер" width="370">
                         <div class="image__box">
                             <h3 class="image__title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>
                     </li>
                     <li class="image__item">
-                        <img src="./images/head/телефон.jpg" alt="телефон" width="370">
+                        <img srcset="./images/head/телефон.jpg 1x, ./images/head/телефон@2x.jpg 2x, ./images/head/телефон@3x.jpg 3x" src="./images/head/телефон.jpg" alt="телефон" width="370">
                         <div class="image__box">
                             <h3 class="image__title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>
                     </li>
                     <li class="image__item">
-                        <img src="./images/head/планшет.jpg" alt="планшет" width="370">
+                        <img srcset="./images/head/планшет.jpg 1x, ./images/head/планшет@2x.jpg 2x, ./images/head/планшет@3x.jpg 3x" src="./images/head/планшет.jpg" alt="планшет" width="370">
                         <div class="image__box">
                             <h3 class="image__title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         </div>
@@ -220,7 +229,8 @@
             <div class="team__box">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="person__list">
-                    <li class="person__item"><img class="person__photo" src="./images/head/игорь.jpg" alt="игорь">
+                    <li class="person__item">
+                        <img class="person__photo" srcset="./images/head/игорь.jpg 1x, ./images/head/игорь@2x.jpg 2x, ./images/head/игорь@3x.jpg 3x" src="./images/head/игорь.jpg" alt="игорь">
                         <h3 class="person__name">Игорь Демьяненко</h3>
                         <p class="person__text">Product Designer</p>
                         <div class="flex">
@@ -256,7 +266,8 @@
                             </div>
                        
                     </li>
-                    <li class="person__item"><img class="person__photo" src="./images/head/оля.jpg" alt="ольга" >
+                    <li class="person__item">
+                        <img class="person__photo" srcset="./images/head/оля.jpg 1x, ./images/head/оля@2x.jpg 2x, ./images/head/оля@3x.jpg 3x" src="./images/head/оля.jpg" alt="ольга" >
                         <h3 class="person__name">Ольга Репина</h3>
                         <p class="person__text">Frontend Developer</p>
                         <div class="flex">
@@ -291,7 +302,8 @@
                         </div>
                         </div>
                     </li>
-                    <li class="person__item"><img class="person__photo" src="./images/head/коля.jpg" alt="николай" >
+                    <li class="person__item">
+                        <img class="person__photo" srcset="./images/head/коля.jpg 1x, ./images/head/коля@2x.jpg 2x, ./images/head/коля@3x.jpg 3x" src="./images/head/коля.jpg" alt="николай" >
                         <h3 class="person__name">Николай Тарасов</h3>
                         <p class="person__text">Marketing</p>
                         <div class="flex">
@@ -326,7 +338,8 @@
                         </div>
                         </div>
                     </li>
-                    <li class="person__item"><img class="person__photo" src="./images/head/миша.jpg" alt="михаил" >
+                    <li class="person__item">
+                        <img class="person__photo" srcset="./images/head/миша.jpg 1x, ./images/head/миша@2x.jpg 2x, ./images/head/миша@3x.jpg 3x" src="./images/head/миша.jpg" alt="михаил" >
                         <h3 class="person__name">Михаил Ермаков</h3>
                         <p class="person__text">UI Designer</p>
                         <div class="flex">
@@ -369,7 +382,7 @@
             <ul class="clients__list">
                 <li class="clients__item">
                         <div class="clients__box">
-                            <a class="clients__link" href="">
+                            <a class="clients__link" href="./index.html">
                             <svg class="clients__icon">
                                 <use href="./images/icons.svg#icon-group"></use>
                             </svg></a>
@@ -377,7 +390,7 @@
                 </li>
                 <li class="clients__item" >
                         <div class="clients__box">
-                            <a class="clients__link" href="">
+                            <a class="clients__link" href="./index.html">
                             <svg class="clients__icon" >
                                 <use href="./images/icons.svg#icon-group-1"></use>
                             </svg></a>
@@ -385,7 +398,7 @@
                 </li>
                 <li class="clients__item" >
                         <div class="clients__box">
-                            <a class="clients__link" href="">
+                            <a class="clients__link" href="./index.html">
                             <svg class="clients__icon" >
                                 <use href="./images/icons.svg#icon-group-2"></use>
                             </svg></a>
@@ -393,7 +406,7 @@
                 </li>
                 <li class="clients__item" >
                         <div class="clients__box">
-                            <a class="clients__link" href="">
+                            <a class="clients__link" href="./index.html">
                             <svg class="clients__icon" >
                                 <use href="./images/icons.svg#icon-Logo"></use>
                             </svg></a>
@@ -401,7 +414,7 @@
                 </li>
                 <li class="clients__item" >
                         <div class="clients__box">
-                            <a class="clients__link" href="">
+                            <a class="clients__link" href="./index.html">
                             <svg class="clients__icon" >
                                 <use href="./images/icons.svg#icon-group-4"></use>
                             </svg></a>
@@ -409,7 +422,7 @@
                 </li>
                 <li class="clients__item" >
                         <div class="clients__box">
-                            <a class="clients__link" href="">
+                            <a class="clients__link" href="./index.html">
                             <svg class="clients__icon">
                                 <use href="./images/icons.svg#icon-group-5"></use>
                             </svg></a>
@@ -427,7 +440,7 @@
                     <address>
                         <ul class="address__list">
                             <li class="address__list">
-                                <a href="" class="address__link">г. Киев, пр-т Леси Украинки,26</a>
+                                <a href="./index.html" class="address__link">г. Киев, пр-т Леси Украинки,26</a>
                             </li>
                             <li class="address__list">
                                 <a href="mailto:info@devstudio.com" class="address__mail">info@devstudio.com</a>
@@ -439,7 +452,7 @@
                     </address>
                 </div>
                 <div class="join">
-                    <h3 class="join__title">ПРИСОЕДЕНЯЙТЕСЬ</h3>
+                    <h3 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                     <ul class="join__list">
                         <li class="join__item" >
                             
@@ -488,7 +501,7 @@
                 <h3 class="send__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
                 <label class="send__label" for="send">
                 <input class="send__input" type="text" placeholder="E-mail">
-                <button class="send__button">Подписатьса
+                <button class="send__button">Подписаться
                     <svg class="send__icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>

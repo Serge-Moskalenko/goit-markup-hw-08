@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --praimeri-text-color: #212121;
   --title-text-color: #757575;
@@ -30,6 +31,12 @@ a {
   margin: 0;
   padding: 0;
   width: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .phone, .nav__list, .auto, .virtues__list, .image__list, .person__list, .clients__list, .address__list {
@@ -259,6 +266,7 @@ span {
 .mobile__flex {
   display: flex;
   margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 .mobile__network {
@@ -436,17 +444,60 @@ span {
   padding-bottom: 118px;
   margin: 0 auto;
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/head/bacground.jpg);
+  background-image: url(/images/head/мобила.jpg);
   background-color: var(--hero-footer-background-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: url(/images/head/мобила2.jpg);
+  }
+}
+
+@media (min-resolution: 3dppx), (min-device-pixel-ratio: 3) {
+  .hero {
+    background-image: url(/images/head/мобила3.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(/images/head/таблетка.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/head/таблетка2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: url(/images/head/таблетка3.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(/images/head/comp.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/head/comp2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: url(/images/head/comp3.jpg);
   }
 }
 
@@ -690,7 +741,7 @@ span {
   display: block;
   position: absolute;
   left: 0px;
-  top: 4px;
+  top: 2px;
   width: 16px;
   height: 15px;
   border: 2.3px solid var(--praimeri-text-color);
@@ -706,16 +757,18 @@ span {
 @media screen and (min-width: 1200px) {
   .checkbox__empty {
     left: 10px;
+    top: 4px;
   }
 }
 
 .checkbox__text {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--title-text-color);
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 1200px) {

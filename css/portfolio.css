@@ -76,6 +76,12 @@ a {
   width: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -232,6 +238,7 @@ span {
 .mobile__flex {
   display: flex;
   margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 .mobile__network {
@@ -725,11 +732,6 @@ input::placeholder {
     margin-left: -30px;
     margin-bottom: -30px;
   }
-}
-
-img {
-  display: block;
-  width: 100%;
 }
 
 .promo__item {
