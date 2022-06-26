@@ -45,7 +45,13 @@
 }
 
 .address__item{
-    @extend %item;
+    @media screen and (min-width:1200px) {
+       margin-bottom: 9px;
+
+       &:last-child{
+        margin-bottom: 0;
+       }
+    }
 }
 
 .address__link{
@@ -96,6 +102,11 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 20px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        text-align: left;
+    }
 }
 
 .join__list {
