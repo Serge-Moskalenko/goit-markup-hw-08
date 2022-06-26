@@ -6,46 +6,46 @@
 
     margin: 0 auto;
     background-color: rgba(47, 48, 58, 0.4);
-    background-image: url(/images/head/мобила.jpg);
+    background-image: url(../images/head/мобила.jpg);
     background-color: var(--hero-footer-background-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2) {
-        background-image: url(/images/head/мобила2.jpg);
+        background-image: url(../images/head/мобила2.jpg);
     }
 
     @media (min-resolution: 3dppx),(-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
-        background-image: url(/images/head/мобила3.jpg);
+        background-image: url(../images/head/мобила3.jpg);
     }
 
     @media screen and (min-width:768px) {
-        background-image: url(/images/head/таблетка.jpg);
+        background-image: url(../images/head/таблетка.jpg);
 
         @media (min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
-            background-image: url(/images/head/таблетка2.jpg);
+            background-image: url(../images/head/таблетка2.jpg);
         }
 
         @media (min-device-pixel-ratio: 3),(min-resolution: 3dppx),
             (-webkit-min-device-pixel-ratio: 3) {
-            background-image: url(/images/head/таблетка3.jpg);
+            background-image: url(../images/head/таблетка3.jpg);
         }
     }
 
     @media screen and (min-width:1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: url(/images/head/comp.jpg);
+        background-image: url(../images/head/comp.jpg);
 
         @media (min-device-pixel-ratio: 2),(min-resolution: 2dppx),
         (-webkit-min-device-pixel-ratio: 2){
-            background-image: url(/images/head/comp2.jpg);
+            background-image: url(../images/head/comp2.jpg);
         }
 
         @media (min-device-pixel-ratio: 3),(min-resolution: 3dppx),
-            (-webkit-min-device-pixel-ratio: 3), {
-            background-image: url(/images/head/comp3.jpg);
+            (-webkit-min-device-pixel-ratio: 3) {
+            background-image: url(../images/head/comp3.jpg);
         }
     }
 }
@@ -75,6 +75,7 @@
         line-height: 1.36;
     }
 }
+
 .hero__buttons {
     border-radius: 4px;
     padding: 10px 32px;

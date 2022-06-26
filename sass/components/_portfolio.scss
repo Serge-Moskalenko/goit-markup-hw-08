@@ -1,10 +1,16 @@
 .portfolio{
     padding-top: 60px;
     padding-bottom: 40px;
+
+    @media screen and(min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .portfolio__container{
     @extend %container;
+
 }
 
 .portfolio__title{
@@ -107,8 +113,8 @@
     transform: translateY(100%);
     transition: transform var(--animation), opacity var(--animation);
 
-    .promo__item:hover &,
-    .promo__item:focus &{
+    .promo__hover:hover &,
+    .promo__hover:focus &{
         transform: translateY(0);
         opacity: 1;
     }

@@ -1,5 +1,9 @@
 .feature{
     @extend %section;
+   
+    @media screen and (min-width:768px) {
+        padding-bottom: 30px;
+    }
 }
 
 .feature__container{
@@ -70,4 +74,8 @@
     margin: 0;
     margin-bottom: 30px;
     color: #757575;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
 }
